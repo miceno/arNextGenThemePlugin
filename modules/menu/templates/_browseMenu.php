@@ -1,4 +1,4 @@
-<div class="dropdown my-2 me-3">
+<div class="my-2 me-3">
     <?php echo $browseMenu->getLabel(['cultureFallback' => true]); ?>
   <ul class="list-group mt-2" aria-labelledby="browse-menu">
     <?php foreach ($browseMenu->getChildren() as $child) { ?>
