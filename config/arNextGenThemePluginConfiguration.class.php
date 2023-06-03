@@ -28,6 +28,8 @@ class arNextGenThemePluginConfiguration extends sfPluginConfiguration
         // values when this method is called from child classes.
         $decoratorDirs = sfConfig::get('sf_decorator_dirs');
         $decoratorDirs[] = sfConfig::get('sf_plugins_dir')
+            .'/arNextGenThemePlugin/templates';
+        $decoratorDirs[] = sfConfig::get('sf_plugins_dir')
             .'/arDominionB5Plugin/templates';
         sfConfig::set('sf_decorator_dirs', $decoratorDirs);
 
