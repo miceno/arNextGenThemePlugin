@@ -19,7 +19,7 @@
     <?php if (sfConfig::get('app_toggleLogo') || sfConfig::get('app_toggleTitle')) { ?>
       <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-0 me-0" href="<?php echo url_for('@homepage'); ?>" title="<?php echo __('Home'); ?>" rel="home">
         <?php if (sfConfig::get('app_toggleLogo')) { ?>
-          <?php echo image_tag('/plugins/arDominionB5Plugin/images/logo', ['alt' => __('AtoM logo'), 'class' => 'd-inline-block my-2 me-3', 'height' => '46']); ?>
+          <?php echo image_tag('/plugins/arNextGenThemePlugin/images/logo', ['alt' => __('AtoM logo'), 'class' => 'd-inline-block my-2 me-3', 'height' => '46']); ?>
         <?php } ?>
         <?php if (sfConfig::get('app_toggleTitle') && !empty(sfConfig::get('app_siteTitle'))) { ?>
           <span class="text-wrap my-1 me-3"><?php echo esc_specialchars(sfConfig::get('app_siteTitle')); ?></span>
@@ -31,6 +31,9 @@
       <span class="visually-hidden"><?php echo __('Toggle navigation'); ?></span>
     </button>
     <div class="collapse navbar-collapse flex-wrap justify-content-end me-1" id="navbar-content">
+        <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1">
+            <?php echo get_component('search', 'box'); ?>
+        </div>
       <div class="d-flex flex-nowrap flex-column flex-lg-row align-items-strech align-items-lg-center">
         <ul class="navbar-nav mx-lg-2">
           <?php echo get_component('menu', 'mainMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ?>
@@ -46,20 +49,3 @@
   </div>
 </header>
 
-<?php if (sfConfig::get('app_toggleDescription') && !empty(sfConfig::get('app_siteDescription'))) { ?>
-    <div class="jumbotron py-md-3 py-lg-5">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-sm-6 col-md-5 col-lg-4">
-                <?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ?>
-                </div>
-                <div class="col-sm-6 col-md-7 col-lg-8">
-                    <h1 class="display-5 mt-3 mt-sm-0">
-                    <?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?>
-                    </h1>
-                    <?php echo get_component('search', 'box'); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php } ?>
