@@ -46,20 +46,3 @@
   </div>
 </header>
 
-<?php if (sfConfig::get('app_toggleDescription') && !empty(sfConfig::get('app_siteDescription'))) { ?>
-    <div class="jumbotron py-md-3 py-lg-5">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-sm-6 col-md-5 col-lg-4">
-                <?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ?>
-                </div>
-                <div class="col-sm-6 col-md-7 col-lg-8">
-                    <h1 class="display-5 mt-3 mt-sm-0">
-                    <?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?>
-                    </h1>
-                    <?php echo get_component('search', 'box'); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php } ?>
