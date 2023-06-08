@@ -19,6 +19,71 @@
         </div>
     </div>
 </div>
+
+<div class="container box">
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-8 projects">
+                    <h2>Projectes destacats</h2>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <ul class="thumbnails projects">
+                    <li class="col">
+                        <div class="thumbnail">
+                            <a href="/9jo02">
+                                <div class="image">
+                                    <img src="/images/../plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">                </div>
+                                <div class="caption text-center">
+                                    <h3>
+                                        Advocats laboralistes                  </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="thumbnail">
+                            <a href="/comissions-obreres-de-catalunya-seccio-sindical-de-la-papelera-espa-nola">
+                                <div class="image">
+                                    <img src="/images/../plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">                </div>
+                                <div class="caption text-center">
+                                    <h3>
+                                        Arxius de relacions laborals                  </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="thumbnail">
+                            <a href="/f39xs">
+                                <div class="image">
+                                    <img src="/images/../plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">                </div>
+                                <div class="caption text-center">
+                                    <h3>
+                                        Col·lecció Biografies Obreres i fonts orals                  </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-8 banner">
+                    <h2 class="text-center">
+                        <a href="https://sites.google.com/a/ccoo.cat/copia-topcat/">
+                            TOPCAT 1963-1977. L’antifranquisme davant el TOP
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 who-are-we">
+            <?php echo render_value_html($sf_data->getRaw('content')); ?>
+        </div>
+    </div>
+</div>
+
 <div class="page p-3">
     <?php echo render_value_html($sf_data->getRaw('content')); ?>
 </div>
