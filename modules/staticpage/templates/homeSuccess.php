@@ -6,6 +6,11 @@
             <?php echo get_partial('browse_menu'); ?>
         </div>
         <div class="col-9">
+            <div class="px-4 pt-5 my-5 text-center bg-image bg-image-one"">
+                <h1 class="display-4 fw-bold text-body-emphasis">
+                    <?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?>
+                </h1>
+            </div>
             <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
             <div class="page p-3">
                 <?php echo render_value_html($sf_data->getRaw('content')); ?>
