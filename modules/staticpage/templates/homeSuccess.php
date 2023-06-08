@@ -5,7 +5,7 @@
         <div class="col-3">
             <?php echo get_partial('browse_menu'); ?>
         </div>
-        <div class="col-8">
+        <div class="col-9">
             <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
             <div class="page p-3">
                 <?php echo render_value_html($sf_data->getRaw('content')); ?>
