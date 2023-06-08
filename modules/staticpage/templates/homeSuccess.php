@@ -1,12 +1,12 @@
 <?php decorate_with('layout_1col'); ?>
 
-<div class="container box details">
-    <div class="row d-none d-md-flex">
+<div class="g-0 m-0 p-0 container box details">
+    <div class="g-0 m-0 p-0 row d-none d-md-flex">
         <div class="col-3">
             <?php echo get_partial('browse_menu'); ?>
         </div>
         <div class="col-9">
-            <div class="px-4 pt-5 my-5 text-center bg-image bg-image-one">
+            <div class="text-center bg-image bg-image-one">
                 <h1 class="display-4 fw-bold text-body-emphasis">
                     <?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?>
                 </h1>
