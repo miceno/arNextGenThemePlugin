@@ -1,8 +1,16 @@
 
+.home .bg-image {
+  height: 70vh;
+}
+
 .bg-image-one {
   background-image: url('../images/bg-image-one.jpg');
 }
 
 .bg-image-two {
   background-image: url('../images/bg-image-two.jpg');
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px #000;
 }

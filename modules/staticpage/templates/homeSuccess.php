@@ -6,13 +6,10 @@
             <?php echo get_partial('browse_menu'); ?>
         </div>
         <div class="col-9">
-            <div class="text-center bg-image bg-image-one">
-                <h1 class="display-4 fw-bold text-body-emphasis">
+            <div class="text-center text-white bg-image bg-image-one d-flex justify-content-center align-items-center">
+                <h1 class="text-shadow display-4 fw-bold text-body-emphasis">
                     <?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?>
                 </h1>
-                <div class="page p-3">
-                    <?php echo render_value_html($sf_data->getRaw('content')); ?>
-                </div>
             </div>
         </div>
     </div>
@@ -21,6 +18,9 @@
             <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
         </div>
     </div>
+</div>
+<div class="page p-3">
+    <?php echo render_value_html($sf_data->getRaw('content')); ?>
 </div>
 
 
