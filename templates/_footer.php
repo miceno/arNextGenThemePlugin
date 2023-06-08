@@ -20,52 +20,46 @@
     <div class="footer-main bg-secondary text-white">
         <div class="container-xl">
             <div class="row py-3">
-                <div class="col-md-3 col-lg-4">
-                    <p class="text-uppercase mb-lg-5">Follow and connect with us</p>
+                <div class="col-md-3 col-lg-4 follow-us">
+                    <p class="mb-lg-5"><?php echo __('Follow and connect with us');?></p>
                     <ul class="list-unstyled d-flex flex-row justify-content-start">
-                        <li class="d-flex flex-column me-3">
-                            <a class="d-flex align-items-center p-0 text-white border rounded-circle" href="https://www.facebook.com/arxiuhistoricpoblenou/" target="_blank">
-                                <i class="fab fa-facebook-f mx-auto" aria-hidden="true"></i><span class="visually-hidden">Facebook</span>
+                        <li class="me-3">
+                            <a class="text-white fa-2x fa-facebook-f mx-auto" href="https://www.facebook.com/arxiuhistoricpoblenou/" target="_blank">
+                                <span class="visually-hidden"><?php echo __('Facebook');?></span>
                             </a>
                         </li>
-                        <li class="d-flex flex-column me-3">
-                            <a class="d-flex align-items-center p-0 text-white border rounded-circle" href="https://www.instagram.com/arxiuhistoricpoblenou/" target="_blank">
-                                <i class="fab fa-instagram mx-auto" aria-hidden="true"></i><span class="visually-hidden">Instagram</span>
+                        <li class="me-3">
+                            <a class="text-white fa-2x fa-instagram mx-auto" href="https://www.instagram.com/arxiuhistoricpoblenou/" target="_blank">
+                                <span class="visually-hidden"><?php echo __('Instagram'); ?></span>
                             </a>
                         </li>
-                        <li class="d-flex flex-column me-3">
-                            <a class="d-flex align-items-center p-0 text-white border rounded-circle" href="https://www.youtube.com/channel/UCJPwaipU2S7UAOs5dkGN1GA" target="_blank">
-                                <i class="fab fa-youtube mx-auto" aria-hidden="true"></i><span class="visually-hidden">Youtube</span>
+                        <li class="me-3">
+                            <a class="text-white fa-2x fa-youtube mx-auto" href="https://www.youtube.com/channel/UCJPwaipU2S7UAOs5dkGN1GA" target="_blank">
+                                <span class="visually-hidden"><?php echo __('Youtube'); ?></span>
                             </a>
                         </li>
-                        <li class="d-flex flex-column me-3">
-                            <a class="d-flex align-items-center p-0 text-white border rounded-circle" href="https://t.me/ArxiyHistoricPoblenou" target="_blank">
-                                <i class="fab fa-telegram mx-auto" aria-hidden="true"></i><span class="visually-hidden">Telegram</span>
+                        <li class="me-3">
+                            <a class="d-flex align-items-center p-0 text-white" href="https://t.me/ArxiyHistoricPoblenou" target="_blank">
+                                <i class="fa-2x fa-telegram mx-auto" aria-hidden="true"></i><span class="visually-hidden"><?php echo __('Telegram'); ?></span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-4">
-                    <p class="text-uppercase mb-lg-5">Contact</p>
+                <div class="col-md-4 col-lg-4 contact">
+                    <p class="mb-lg-5"><?php echo __('Contact'); ?></p>
                     <p>
-                        <a class="d-inline-block text-white border p-3" href="https://ask.unog.ch/archives">Ask an Archivist</a>
+                        <a class="d-inline-block text-white border p-3" href="https://www.arxiuhistoricpoblenou.cat">Arxiu Històric del Poblenou</a>
                     </p>
                     <p>
-                        Palais des Nations<br>
-                        1211 Geneva 1211, Switzerland<br>
-                        Phone: +41 (0)22 917 1234<br>
-                        <a class="text-white" href="https://www.google.com/maps/place/Palais+des+Nations/@46.2269806,6.1334386,602a,35y,90h,39.23t/data=!3m1!1e3!4m5!3m4!1s0x478c64fcaacb2e3f:0xbaabef97619cd473!8m2!3d46.2266053!4d6.1404813" target="_blank"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> See location</a>
+                        Torre de les Aigües del Besós <br/>
+                        Plaça Ramon Calsina s/n <br/>
+                        08019 Barcelona <br/>
+                        <?php echo __('Telephone');?>: <a href="tel:93 564 77 03" data-type="tel" data-id="tel:93 564 77 03">93 564 77 03</a><br/>
+                        <?php echo __('De dilluns a divendres de 17h a 19h');?><br/>
                     </p>
                 </div>
-                <div class="col-md-5 col-lg-4">
-                    <p class="text-uppercase mb-lg-5">Practical Information</p>
-                    <div class="d-flex">
-                        <ul class="list-unstyled">
-                            <li><a class="text-white" href="https://www.ungeneva.org/en/knowledge/archives">Visit the Archives</a></li>
-                            <li><a class="text-white" href="https://www.ungeneva.org/practical-information/services">Services operating hours</a></li>
-                            <li><a class="text-white" href="https://www.ungeneva.org/about/accessibility"><i class="fab fa-accessible-icon" aria-hidden="true"></i> Accessibility</a></li>
-                        </ul>
-                    </div>
+                <div class="col-md-5 col-lg-4 location">
+                    <p><iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.5333762328996!2d2.2100163147628327!3d41.405939002809035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3449a19245d%3A0x7950f6bd1d4cb975!2sTorre+de+les+Aig%C3%BCes+del+Bes%C3%B2s!5e0!3m2!1sen!2ses!4v1551545739243" zoomcontrol="false" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
                 </div>
             </div>
         </div>
