@@ -7,7 +7,7 @@
         </div>
         <div class="col-9">
             <div class="text-center text-white bg-image bg-image-one d-flex justify-content-center align-items-center">
-                <h1 class="text-shadow display-4 fw-bold text-body-emphasis">
+                <h1 class="text-shadow display-4 fw-bold">
                     <?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?>
                 </h1>
             </div>
@@ -53,12 +53,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8 banner">
-                    <h2 class="text-center">
+                <div class="banner p-3">
+                    <h1 class="fw-bold text-white text-center">
                         <a href="https://sites.google.com/a/ccoo.cat/copia-topcat/">
-                            TOPCAT 1963-1977. L’antifranquisme davant el TOP
+                            TOPCAT 1963-1977. <br/> L’antifranquisme davant el TOP
                         </a>
-                    </h2>
+                    </h1>
                 </div>
             </div>
         </div>
