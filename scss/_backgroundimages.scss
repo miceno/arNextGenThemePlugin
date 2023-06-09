@@ -22,8 +22,10 @@
 }
 
 .projects .card img {
-  height: 200px;
+  height: auto;
   width: auto;
+  max-width: 100%;
+  max-height: 200px;
 }
 
 .banner {
