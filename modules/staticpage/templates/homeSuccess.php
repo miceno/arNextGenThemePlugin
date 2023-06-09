@@ -27,8 +27,7 @@
                 <h2><?php echo __("Featured projects");?></h2>
             </div>
             <div class="row">
-                <div class="card-group">
-                <div class="card col h-100 text-center">
+                <div class="card col text-center m-3">
                     <a href="/9jo02" class="stretched-link">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">
                     </a>
@@ -36,7 +35,7 @@
                         Advocats laboralistes
                     </div>
                 </div>
-                <div class="card col h-100 text-center">
+                <div class="card col text-center m-3">
                     <a class="stretched-link" href="/comissions-obreres-de-catalunya-seccio-sindical-de-la-papelera-espa-nola">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">
                     </a>
@@ -44,7 +43,7 @@
                         Arxius de relacions laborals
                     </div>
                 </div>
-                <div class="card col h-100 text-center">
+                <div class="card col text-center m-3">
                     <a class="stretched-link" href="/f39xs">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">
                     </a>
@@ -52,7 +51,6 @@
                         Col·lecció Biografies Obreres i fonts orals
                     </div>
                 </div>
-            </div>
             </div>
             <div class="row">
                 <div class="col-8 banner">
@@ -69,11 +67,6 @@
         </div>
     </div>
 </div>
-
-<div class="page p-3">
-    <?php echo render_value_html($sf_data->getRaw('content')); ?>
-</div>
-
 
 <?php if (QubitAcl::check($resource, 'update')) { ?>
   <?php slot('after-content'); ?>
