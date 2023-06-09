@@ -20,53 +20,39 @@
     </div>
 </div>
 
-<div class="container box">
+<div class="container box projects">
     <div class="row">
         <div class="col-8">
             <div class="row">
-                <div class="col-8 projects">
-                    <h2>Projectes destacats</h2>
+                <h2><?php echo __("Featured projects");?></h2>
+            </div>
+            <div class="row">
+                <div class="card-group">
+                <div class="card col h-100 text-center">
+                    <a href="/9jo02" class="stretched-link">
+                        <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">
+                    </a>
+                    <div class="card-body">
+                        Advocats laboralistes
+                    </div>
+                </div>
+                <div class="card col h-100 text-center">
+                    <a class="stretched-link" href="/comissions-obreres-de-catalunya-seccio-sindical-de-la-papelera-espa-nola">
+                        <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">
+                    </a>
+                    <div class="card-body">
+                        Arxius de relacions laborals
+                    </div>
+                </div>
+                <div class="card col h-100 text-center">
+                    <a class="stretched-link" href="/f39xs">
+                        <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">
+                    </a>
+                    <div class="card-body">
+                        Col·lecció Biografies Obreres i fonts orals
+                    </div>
                 </div>
             </div>
-            <div class="row-fluid">
-                <ul class="thumbnails projects">
-                    <li class="col">
-                        <div class="thumbnail">
-                            <a href="/9jo02">
-                                <div class="image">
-                                    <img src="/images/../plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">                </div>
-                                <div class="caption text-center">
-                                    <h3>
-                                        Advocats laboralistes                  </h3>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="col">
-                        <div class="thumbnail">
-                            <a href="/comissions-obreres-de-catalunya-seccio-sindical-de-la-papelera-espa-nola">
-                                <div class="image">
-                                    <img src="/images/../plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">                </div>
-                                <div class="caption text-center">
-                                    <h3>
-                                        Arxius de relacions laborals                  </h3>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="col">
-                        <div class="thumbnail">
-                            <a href="/f39xs">
-                                <div class="image">
-                                    <img src="/images/../plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">                </div>
-                                <div class="caption text-center">
-                                    <h3>
-                                        Col·lecció Biografies Obreres i fonts orals                  </h3>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
             </div>
             <div class="row">
                 <div class="col-8 banner">
