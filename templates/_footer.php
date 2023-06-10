@@ -23,21 +23,21 @@
                 <div class="col-md-3 col-lg-4 follow-us">
                     <p class="h3"><?php echo __('Follow and connect with us');?></p>
                     <p class="text-white">
-                            <a class="btn btn-link btn-floating m-1"
+                            <a class="btn btn-large icon icon-facebook m-1"
                                href="https://www.facebook.com/arxiuhistoricpoblenou/" target="_blank">
                                <i class="text-white fab fa-2x fa-facebook mx-auto"></i><span class="visually-hidden"><?php echo __('Facebook');?></span>
                             </a>
-                            <a class="btn btn-link btn-floating m-1"
+                            <a class="btn btn-large icon icon-instagram m-1"
                                href="https://www.instagram.com/arxiuhistoricpoblenou/" target="_blank">
                                <i class="text-white fab fa-2x fa-instagram mx-auto"></i> <span class="visually-hidden"><?php echo __('Instagram'); ?></span>
                             </a>
-                            <a class="btn btn-link btn-floating m-1"
+                            <a class="btn btn-large icon icon-youtube m-1"
                                href="https://www.youtube.com/channel/UCJPwaipU2S7UAOs5dkGN1GA" target="_blank">
                                <i class="text-white fab fa-2x fa-youtube mx-auto"></i> <span class="visually-hidden"><?php echo __('Youtube'); ?></span>
                             </a>
-                            <a class="btn btn-link btn-floating m-1"
+                            <a class="btn btn-large icon icon-telegram m-1"
                                href="https://t.me/ArxiyHistoricPoblenou" target="_blank">
-                               <i class="text-white fab fa-2x fa-telegram mx-auto"></i> <span class="visually-hidden"><?php echo __('Telegram'); ?></span>
+                               <i class="text-white fab fa-2x fa-telegram-plane mx-auto"></i> <span class="visually-hidden"><?php echo __('Telegram'); ?></span>
                             </a>
                     </p>
                     </p>
