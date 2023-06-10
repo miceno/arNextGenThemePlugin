@@ -83,7 +83,7 @@
                         ['class'=>"d-block w-100", 'alt' => __('10836 Protecció de menors 1954')]),
                     'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html',
                     ['target'=> '_blank', 'title' => __('10836 Protecció de menors 1954')]); ?>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="text-shadow carousel-caption d-none d-md-block">
                     <h5>10836 Protecció de menors 1954</h5>
                     <p>Protecció de menors (La Prote). Nens amb les bótes de
                         llet de l'ajuda USA.
@@ -96,7 +96,7 @@
                             ['class'=>"d-block w-100", 'alt' => __('20689 Centenari del ferrocarril 1948')]),
                         'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/20689-Centenari-del-ferrocarril-1948.html',
                     ['target'=> '_blank', 'title' => __('20689 Centenari del ferrocarril 1948')]); ?>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="text-shadow carousel-caption d-none d-md-block">
                     <h5>20689 Centenari del ferrocarril 1948</h5>
                     <p>Centenari del ferrocarril. La locomotora "cocodril" 7510 sortint
                         de l'Estació de França.</p>
@@ -108,7 +108,7 @@
                             ['class'=>"d-block w-100", 'alt' => __('04803 La Vanguardia [1960]')]),
                     'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html',
                     ['target'=> '_blank', 'title' => __('04803 La Vanguardia [1960]')]); ?>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="text-shadow carousel-caption d-none d-md-block">
                     <h5>04803 La Vanguardia [1960]</h5>
                     <p>Repartidor de diaris de La Vanguardia, amb carro i cavall.</p>
                 </div>
