@@ -69,6 +69,7 @@
 </div>
 
 <div class="container box">
+  <div class="row">
     <div id="carouselHomePage" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,24 +78,39 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <?php echo image_tag('/plugins/arNextGenThemePlugin/images/bg-image-two.jpg', ['class'=>"d-block w-100", 'alt' => __('Slide 1')]); ?>
+                <?php echo link_to(
+                    image_tag('https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"><img src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=100047',
+                        ['class'=>"d-block w-100", 'alt' => __('10836 Protecció de menors 1954')]),
+                    'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html',
+                    ['target'=> '_blank', 'title' => __('10836 Protecció de menors 1954')]); ?>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>10836 Protecció de menors 1954</h5>
+                    <p>Protecció de menors (La Prote). Nens amb les bótes de
+                        llet de l'ajuda USA.
+                    </p>
                 </div>
             </div>
             <div class="carousel-item">
-                <?php echo image_tag('/plugins/arNextGenThemePlugin/images/bg-image-two.jpg', ['class'=>"d-block w-100", 'alt' => __('Slide 2')]); ?>
+                <?php echo link_to(
+                        image_tag("https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=163253",
+                            ['class'=>"d-block w-100", 'alt' => __('20689 Centenari del ferrocarril 1948')]),
+                        'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/20689-Centenari-del-ferrocarril-1948.html',
+                    ['target'=> '_blank', 'title' => __('20689 Centenari del ferrocarril 1948')]); ?>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>20689 Centenari del ferrocarril 1948</h5>
+                    <p>Centenari del ferrocarril. La locomotora "cocodril" 7510 sortint
+                        de l'Estació de França.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <?php echo image_tag('/plugins/arNextGenThemePlugin/images/bg-image-two.jpg', ['class'=>"d-block w-100", 'alt' => __('Slide 3')]); ?>
+                <?php echo link_to(
+                        image_tag("https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6611",
+                            ['class'=>"d-block w-100", 'alt' => __('04803 La Vanguardia [1960]')]),
+                    'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html',
+                    ['target'=> '_blank', 'title' => __('04803 La Vanguardia [1960]')]); ?>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>04803 La Vanguardia [1960]</h5>
+                    <p>Repartidor de diaris de La Vanguardia, amb carro i cavall.</p>
                 </div>
             </div>
         </div>
@@ -107,6 +123,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+  </div>
 </div>
 <?php if (QubitAcl::check($resource, 'update')) { ?>
   <?php slot('after-content'); ?>
