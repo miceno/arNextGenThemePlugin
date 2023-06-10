@@ -32,7 +32,7 @@
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">
                     </a>
                     <div class="card-body">
-                        Advocats laboralistes
+                        <?php echo __("Maps"); ?>
                     </div>
                 </div>
                 <div class="card col text-center m-1">
@@ -40,7 +40,7 @@
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">
                     </a>
                     <div class="card-body">
-                        Arxius de relacions laborals
+                        Arxiu Huertas Claveria
                     </div>
                 </div>
                 <div class="card col text-center m-1">
@@ -48,7 +48,7 @@
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">
                     </a>
                     <div class="card-body">
-                        Col·lecció Biografies Obreres i fonts orals
+                        Arxiu Ateneu Colon
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 <div class="banner p-3">
                     <h1 class="fw-bold text-white text-center">
                         <a href="https://sites.google.com/a/ccoo.cat/copia-topcat/">
-                            TOPCAT 1963-1977. <br/> L’antifranquisme davant el TOP
+                            <?php echo __("Maps"); ?>
                         </a>
                     </h1>
                 </div>
@@ -77,21 +77,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../../../images/bg-image-two.jpg" class="d-block w-100" alt="...">
+                <?php echo image_tag('/plugins/arNextGenThemePlugin/images/bg-image-two.jpg', ['class'=>"d-block w-100", 'alt' => __('Slide 1')]); ?>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../../../images/bg-image-two.jpg" class="d-block w-100" alt="...">
+                <?php echo image_tag('/plugins/arNextGenThemePlugin/images/bg-image-two.jpg', ['class'=>"d-block w-100", 'alt' => __('Slide 2')]); ?>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../../../images/bg-image-two.jpg" class="d-block w-100" alt="...">
+                <?php echo image_tag('/plugins/arNextGenThemePlugin/images/bg-image-two.jpg', ['class'=>"d-block w-100", 'alt' => __('Slide 3')]); ?>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
