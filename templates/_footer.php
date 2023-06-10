@@ -23,24 +23,28 @@
                 <div class="col-md-3 col-lg-4 follow-us">
                     <p class="mb-lg-5"><?php echo __('Follow and connect with us');?></p>
                     <ul class="list-unstyled d-flex flex-row justify-content-start">
-                        <li class="me-3">
-                            <a class="text-white fa-2x fa-facebook-f mx-auto" href="https://www.facebook.com/arxiuhistoricpoblenou/" target="_blank">
-                                <span class="visually-hidden"><?php echo __('Facebook');?></span>
+                        <li class="me-1">
+                            <a class="btn btn-link btn-floating btn-lg m-1"
+                               href="https://www.facebook.com/arxiuhistoricpoblenou/" target="_blank">
+                               <i class="text-white fab fa-2x fa-facebook mx-auto"></i><span class="visually-hidden"><?php echo __('Facebook');?></span>
                             </a>
                         </li>
-                        <li class="me-3">
-                            <a class="text-white fa-2x fa-instagram mx-auto" href="https://www.instagram.com/arxiuhistoricpoblenou/" target="_blank">
-                                <span class="visually-hidden"><?php echo __('Instagram'); ?></span>
+                        <li class="me-1">
+                            <a class="btn btn-link btn-floating btn-lg m-1"
+                               href="https://www.instagram.com/arxiuhistoricpoblenou/" target="_blank">
+                               <i class="text-white fab fa-2x fa-instagram mx-auto"></i> <span class="visually-hidden"><?php echo __('Instagram'); ?></span>
                             </a>
                         </li>
-                        <li class="me-3">
-                            <a class="text-white fa-2x fa-youtube mx-auto" href="https://www.youtube.com/channel/UCJPwaipU2S7UAOs5dkGN1GA" target="_blank">
-                                <span class="visually-hidden"><?php echo __('Youtube'); ?></span>
+                        <li class="me-1">
+                            <a class="btn btn-link btn-floating btn-lg m-1"
+                               href="https://www.youtube.com/channel/UCJPwaipU2S7UAOs5dkGN1GA" target="_blank">
+                               <i class="text-white fab fa-2x fa-youtube mx-auto"></i> <span class="visually-hidden"><?php echo __('Youtube'); ?></span>
                             </a>
                         </li>
-                        <li class="me-3">
-                            <a class="d-flex align-items-center p-0 text-white" href="https://t.me/ArxiyHistoricPoblenou" target="_blank">
-                                <i class="fa-2x fa-telegram mx-auto" aria-hidden="true"></i><span class="visually-hidden"><?php echo __('Telegram'); ?></span>
+                        <li class="me-1">
+                            <a class="btn btn-link btn-floating btn-lg m-1"
+                               href="https://t.me/ArxiyHistoricPoblenou" target="_blank">
+                               <i class="text-white fab fa-2x fa-telegram mx-auto"></i> <span class="visually-hidden"><?php echo __('Telegram'); ?></span>
                             </a>
                         </li>
                     </ul>
