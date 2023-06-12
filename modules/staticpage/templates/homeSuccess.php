@@ -22,12 +22,15 @@
 
 <div class="container box projects">
     <div class="row">
-        <div class="col-8">
+        <div class="col col-md-4 who-are-we">
+            <?php echo render_value_html($sf_data->getRaw('content')); ?>
+        </div>
+        <div class="col-md-8">
             <div class="row">
                 <h2><?php echo __("Featured projects");?></h2>
             </div>
             <div class="row">
-                <div class="card col text-center m-1">
+                <div class="card col-md text-center m-1">
                     <a href="/9jo02" class="stretched-link">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">
                     </a>
@@ -35,7 +38,7 @@
                         <?php echo __("Maps"); ?>
                     </div>
                 </div>
-                <div class="card col text-center m-1">
+                <div class="card col-md text-center m-1">
                     <a class="stretched-link" href="/comissions-obreres-de-catalunya-seccio-sindical-de-la-papelera-espa-nola">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">
                     </a>
@@ -43,7 +46,7 @@
                         Arxiu Huertas Claveria
                     </div>
                 </div>
-                <div class="card col text-center m-1">
+                <div class="card col-md text-center m-1">
                     <a class="stretched-link" href="/f39xs">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">
                     </a>
@@ -61,9 +64,6 @@
                     </h1>
                 </div>
             </div>
-        </div>
-        <div class="col-4 who-are-we">
-            <?php echo render_value_html($sf_data->getRaw('content')); ?>
         </div>
     </div>
 </div>
