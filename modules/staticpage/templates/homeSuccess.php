@@ -81,7 +81,8 @@
                 <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"
                     target="_blank"
                     title="10836 Protecció de menors 1954">
-                    <img src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=100048"
+                    <img class="img-fluid"
+                         src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=100048"
                          alt="10836 Protecció de menors 1954" />
                 <div class="text-shadow carousel-caption d-none d-md-block">
                     <h5>10836 Protecció de menors 1954</h5>
