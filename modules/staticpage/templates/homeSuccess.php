@@ -105,15 +105,17 @@
                 </a>
             </div>
             <div class="carousel-item">
-                <?php echo link_to(
-                    image_tag("https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6610",
-                        ['class'=>"img-fluid", 'alt' => __('04803 La Vanguardia [1960]')]),
-                    'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html',
-                    ['target'=> '_blank', 'title' => __('04803 La Vanguardia [1960]')]); ?>
-                <div class="text-shadow carousel-caption d-none d-md-block">
-                    <h5>04803 La Vanguardia [1960]</h5>
-                    <p>Repartidor de diaris de La Vanguardia, amb carro i cavall.</p>
-                </div>
+                <a href="'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html"
+                   target='_blank'
+                   title='04803 La Vanguardia [1960]'>
+                    <img class="img-fluid"
+                         src=https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6610",
+                         alt="04803 La Vanguardia [1960]"/>
+                    <div class="text-shadow carousel-caption d-none d-md-block">
+                        <h5>04803 La Vanguardia [1960]</h5>
+                        <p>Repartidor de diaris de La Vanguardia, amb carro i cavall.</p>
+                    </div>
+                </a>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomePage" data-bs-slide="prev">
