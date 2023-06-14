@@ -77,7 +77,7 @@
             <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner w-100">
-            <div class="carousel-item h-100 text-center active ">
+            <div class="carousel-item h-100 active ">
                 <a href=https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"
                    target="_blank"
                    title="10836 Protecció de menors 1954">
@@ -92,7 +92,7 @@
                     </div>
                 </a>
             </div>
-            <div class="carousel-item h-100 text-center">
+            <div class="carousel-item h-100">
                 <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/20689-Centenari-del-ferrocarril-1948.html"
                    target="_blank"
                    title="20689 Centenari del ferrocarril 1948">
@@ -106,7 +106,7 @@
                     </div>
                 </a>
             </div>
-            <div class="carousel-item h-100 text-center">
+            <div class="carousel-item h-100">
                 <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html"
                    target='_blank'
                    title='04803 La Vanguardia [1960]'>
