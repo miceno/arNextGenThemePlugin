@@ -1,7 +1,7 @@
 <?php decorate_with('layout_1col'); ?>
 
 <div class="g-0 m-0 p-0 container box details">
-    <div class="g-0 m-0 p-0 row d-none d-md-flex">
+    <div class="g-0 m-0 p-0 row d-none d-lg-flex">
         <div class="col-3">
             <?php echo get_partial('browse_menu'); ?>
         </div>
@@ -13,7 +13,7 @@
             </div>
         </div>
     </div>
-    <div class="row d-md-none">
+    <div class="row d-lg-none">
         <div class="col text-center organization-title">
             <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
         </div>
@@ -22,7 +22,7 @@
 
 <div class="container box projects">
     <div class="row">
-        <div class="col col-md-4 who-are-we">
+        <div class="col-md-4 who-are-we">
             <?php echo render_value_html($sf_data->getRaw('content')); ?>
         </div>
         <div class="col-md-8">
