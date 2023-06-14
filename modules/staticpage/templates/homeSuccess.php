@@ -78,7 +78,7 @@
         </div>
         <div class="carousel-inner w-100">
             <div class="carousel-item h-100 active ">
-                <a href=https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"
+                <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"
                    target="_blank"
                    title="10836 Protecció de menors 1954">
                     <img class="d-block h-100 mx-auto"
