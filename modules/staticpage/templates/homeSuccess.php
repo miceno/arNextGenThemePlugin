@@ -76,28 +76,29 @@
             <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"
-                    target="_blank"
-                    title="10836 Protecció de menors 1954">
-                    <img class="img-fluid"
+        <div class="carousel-inner w-100">
+            <div class="carousel-item h-100 text-center active ">
+                <a href=https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"
+                   target="_blank"
+                   title="10836 Protecció de menors 1954">
+                    <img class="d-block h-100 mx-auto"
                          src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=100048"
-                         alt="10836 Protecció de menors 1954" />
-                <div class="text-shadow carousel-caption d-none d-md-block">
-                    <h5>10836 Protecció de menors 1954</h5>
-                    <p>Protecció de menors (La Prote). Nens amb les bótes de
-                        llet de l'ajuda USA.
-                    </p>
-                </div>
+                         alt="10836 Protecció de menors 1954"/>
+                    <div class="text-shadow carousel-caption d-none d-md-block">
+                        <h5>10836 Protecció de menors 1954</h5>
+                        <p>Protecció de menors (La Prote). Nens amb les bótes de
+                            llet de l'ajuda USA.
+                        </p>
+                    </div>
                 </a>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item h-100 text-center">
                 <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/20689-Centenari-del-ferrocarril-1948.html"
                    target="_blank"
                    title="20689 Centenari del ferrocarril 1948">
-                    <img class="img-fluid" src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=163252"
-                         alt="20689 Centenari del ferrocarril 1948" />
+                    <img class="d-block h-100 mx-auto"
+                         src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=163252"
+                         alt="20689 Centenari del ferrocarril 1948"/>
                     <div class="text-shadow carousel-caption d-none d-md-block">
                         <h5>20689 Centenari del ferrocarril 1948</h5>
                         <p>Centenari del ferrocarril. La locomotora "cocodril" 7510 sortint
@@ -105,11 +106,11 @@
                     </div>
                 </a>
             </div>
-            <div class="carousel-item">
-                <a href="'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html"
+            <div class="carousel-item h-100 text-center">
+                <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html"
                    target='_blank'
                    title='04803 La Vanguardia [1960]'>
-                    <img class="img-fluid"
+                    <img class="d-block h-100 mx-auto"
                          src=https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6610",
                          alt="04803 La Vanguardia [1960]"/>
                     <div class="text-shadow carousel-caption d-none d-md-block">
