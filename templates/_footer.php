@@ -21,7 +21,7 @@
         <div class="container-xl">
             <div class="row py-3">
                 <div class="col-md-3 col-lg-4 follow-us">
-                    <p class="h3"><?php echo __('Follow and connect with us');?></p>
+                    <p class="h3"><?php echo __('Contact area');?></p>
                     <p class="text-white">
                             <a class="btn icon"
                                href="https://www.facebook.com/arxiuhistoricpoblenou/" target="_blank">
@@ -43,7 +43,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 col-lg-4 contact">
-                    <p class="h3"><?php echo __('Contact'); ?></p>
+                    <p class="h3"><?php echo __('Address'); ?></p>
                     <p>
                         <a class="d-inline-block text-white border p-3" href="https://www.arxiuhistoricpoblenou.cat">Arxiu Històric del Poblenou</a>
                     </p>
