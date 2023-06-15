@@ -78,6 +78,8 @@ $breadcrumb-divider-flipped: quote("«") !default;
 $breadcrumb-divider-color: $primary !default;
 $zindex-dropdown: 1035 !default;
 
+$enable-negative-margins: true !default;
+
 // Font Awesome
 $fa-font-path: "../../../../node_modules/@fortawesome/fontawesome-free/webfonts" !default;
 
