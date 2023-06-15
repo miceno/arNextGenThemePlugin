@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="card col-md text-center m-1">
                     <a href="https://www.arxiuhistoricpoblenou.cat/mapes/" class="stretched-link">
-                        <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">
+                        <img class="card-img-top" src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=126360">
                     </a>
                     <div class="card-body">
                         <?php echo __("Maps"); ?>
@@ -40,7 +40,8 @@
                 </div>
                 <div class="card col-md text-center m-1">
                     <a class="stretched-link" href="https://atom.arxiuhistoricpoblenou.cat/index.php/josep-maria-huertas-claveria-2;isad?sf_culture=ca">
-                        <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">
+                        <img class="card-img-top" src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=25225"
+                             alt="09125 Josep Maria Huertas [2005]" />
                     </a>
                     <div class="card-body">
                         Arxiu Huertas Claveria
@@ -48,7 +49,7 @@
                 </div>
                 <div class="card col-md text-center m-1">
                     <a class="stretched-link" href="https://atom.arxiuhistoricpoblenou.cat/index.php/ateneu-colon?sf_culture=ca">
-                        <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">
+                        <img class="card-img-top" <img src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=105897" alt="11892 Ateneo Colón 1964" />
                     </a>
                     <div class="card-body">
                         Arxiu Ateneu Colon
