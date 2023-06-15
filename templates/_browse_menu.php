@@ -1,6 +1,6 @@
 <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID); ?>
 <?php if ($browseMenu->hasChildren()) { ?>
-    <section class="card mb-3">
+    <section class="card">
         <h2 class="h5 p-3 mb-0">
             <?php echo __('Browse by'); ?>
         </h2>
