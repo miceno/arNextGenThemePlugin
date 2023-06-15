@@ -64,9 +64,9 @@
     <div class="footer-ownership pt-3 pb-2">
         <div class="d-flex justify-content-between">
             <div>
-                <a href="" target="_blank">Terms of Use</a> |
-                <a href="" target="_blank">Privacy Notice</a> |
-                <a href="">Multilingualism Disclaimer</a>
+                <?php echo link_to(__('Terms and conditions'), ['module' => 'staticpage', 'slug' => 'terms-and-conditions'], ['target'=>'_blank']); ?> |
+                <?php echo link_to(__('Privacy Policy'), ['module' => 'staticpage', 'slug' => 'privacy'], ['target'=>'_blank']); ?> |
+                <?php echo link_to(__('Multilingualism Disclaimer'), ['module' => 'staticpage', 'slug' => 'multilingual-disclaimer'], ['target'=>'_blank']); ?>
             </div>
             <div>© <?php echo "Arxiu Històric del Poblenou";?></div>
         </div>
