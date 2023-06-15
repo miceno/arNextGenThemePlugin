@@ -27,11 +27,11 @@
         </div>
         <div class="col-md-8">
             <div class="row">
-                <h2><?php echo __("Featured projects");?></h2>
+                <h2><?php echo __("Holdings");?></h2>
             </div>
             <div class="row">
                 <div class="card col-md text-center m-1">
-                    <a href="/9jo02" class="stretched-link">
+                    <a href="https://www.arxiuhistoricpoblenou.cat/mapes/" class="stretched-link">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project1.jpg">
                     </a>
                     <div class="card-body">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="card col-md text-center m-1">
-                    <a class="stretched-link" href="/comissions-obreres-de-catalunya-seccio-sindical-de-la-papelera-espa-nola">
+                    <a class="stretched-link" href="https://atom.arxiuhistoricpoblenou.cat/index.php/josep-maria-huertas-claveria-2;isad?sf_culture=ca">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project2.jpg">
                     </a>
                     <div class="card-body">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="card col-md text-center m-1">
-                    <a class="stretched-link" href="/f39xs">
+                    <a class="stretched-link" href="https://atom.arxiuhistoricpoblenou.cat/index.php/ateneu-colon?sf_culture=ca">
                         <img class="card-img-top" src="https://ccoo.cat.accesstomemory.net/plugins/arCCOOCatalunyaPlugin/i18n/projects/project3.jpg">
                     </a>
                     <div class="card-body">
@@ -58,7 +58,7 @@
             <div class="row">
                 <div class="banner p-3">
                     <h1 class="fw-bold text-white text-center">
-                        <a href="https://sites.google.com/a/ccoo.cat/copia-topcat/">
+                        <a href="https://www.arxiuhistoricpoblenou.cat/mapes/">
                             <?php echo __("Maps"); ?>
                         </a>
                     </h1>
