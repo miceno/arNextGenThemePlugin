@@ -22,7 +22,7 @@
 
 <div class="container box projects">
     <div class="row">
-        <div class="col-md-4 who-are-we">
+        <div class="col-md-4 who-are-we p-4 order-lg-2">
             <?php echo render_value_html($sf_data->getRaw('content')); ?>
         </div>
         <div class="col-md-8">
