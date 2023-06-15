@@ -27,7 +27,7 @@
         </div>
         <div class="col-md-8">
             <div class="row">
-                <h2><?php echo __("Holdings");?></h2>
+                <h2><?php echo __("Archival and other holdings");?></h2>
             </div>
             <div class="row">
                 <div class="card col-md text-center m-1">
@@ -44,7 +44,7 @@
                              alt="09125 Josep Maria Huertas [2005]" />
                     </a>
                     <div class="card-body">
-                        Arxiu Huertas Claveria
+                        <?php echo __("Holdings"); ?> Huertas Claveria
                     </div>
                 </div>
                 <div class="card col-md text-center m-1">
@@ -52,7 +52,7 @@
                         <img class="card-img-top" <img src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=105897" alt="11892 Ateneo Colón 1964" />
                     </a>
                     <div class="card-body">
-                        Arxiu Ateneu Colon
+                        <?php echo __("Holdings"); ?> Ateneu Colon
                     </div>
                 </div>
             </div>
