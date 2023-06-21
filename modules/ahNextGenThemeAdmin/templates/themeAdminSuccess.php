@@ -24,57 +24,9 @@
 
       <fieldset class="collapsible">
 
-        <legend><?php echo __('Clipboard saving'); ?></legend>
-
-        <?php echo $form->clipboard_save_max_age
-            ->label(__('Saved clipboard maximum age (in days)'))
-            ->help(__('The number of days a saved clipboard should be retained before it is eligible for deletion'))
-            ->renderRow(); ?>
+        <legend>Empty: to be done</legend>
 
       </fieldset>
-
-      <fieldset class="collapsible">
-
-        <legend><?php echo __('Clipboard sending'); ?></legend>
-
-        <?php echo $form->clipboard_send_enabled
-            ->label(__('Enable clipboard send functionality'))
-            ->renderRow(); ?>
-
-        <?php echo $form->clipboard_send_url
-            ->label(__('External URL to send clipboard contents to'))
-            ->renderRow(); ?>
-
-        <?php echo get_partial('settings/i18n_form_field',
-          [
-              'name' => 'clipboard_send_button_text',
-              'label' => __('Send button text'),
-              'settings' => $settings,
-              'form' => $form, ]); ?>
-
-        <?php echo get_partial('settings/i18n_form_field',
-          [
-              'name' => 'clipboard_send_message_html',
-              'label' => __('Text or HTML to display when sending clipboard contents'),
-              'settings' => $settings,
-              'form' => $form, ]); ?>
-
-        <?php echo $form->clipboard_send_http_method
-            ->label(__('HTTP method to use when sending clipboard contents'))
-            ->renderRow(); ?>
-
-      </fieldset>
-
-      <fieldset class="collapsible">
-
-        <legend><?php echo __('Clipboard export'); ?></legend>
-
-        <?php echo $form->clipboard_export_digitalobjects_enabled
-            ->label(__('Enable digital object export'))
-            ->renderRow(); ?>
-
-      </fieldset>
-
     </div>
 
     <section class="actions">

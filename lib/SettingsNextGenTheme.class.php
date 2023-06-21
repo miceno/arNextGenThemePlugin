@@ -17,6 +17,10 @@
  * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
  */
 
+use QubitSetting;
+use sfForm;
+use sfWidgetForm;
+
 /**
  * Global form definition for settings module - with validation.
  *
@@ -140,6 +144,8 @@ class SettingsNextGenTheme
      */
     protected array $_settingsConfig;
 
+    protected string $_settingScope;
+
     /**
      * Stores the QubitSetting data for this configuration.
      *
@@ -147,13 +153,13 @@ class SettingsNextGenTheme
      */
     protected array $_settings;
 
-    protected string $_defaultWidgetClass;
+    protected string $_defaultWidgetClass = "sfWidgetFormInput";
 
     public function __construct()
     {
+        $this->setSettingScope('ahNextGenTheme');
         $this->_initSettings();
         $this->_createSettings();
-        $this->setSettingScope('ahNextGenTheme');
     }
 
     /**
@@ -163,17 +169,18 @@ class SettingsNextGenTheme
      */
     public function _initSettings()
     {
-        $this->_settingsConfig = [
+        $i18n = sfContext::getInstance()->getI18N();
+        $this->setSettingsConfig( [
             /* Organization name */
             [
                 'id' => 'organization_name',
-                'label' => __('Organization name'),
-                "value" => __("Organization"),
-                "widget" => "string",
-                "help" => __("This is an organization field"),
-                'i18n' => true
-            ],
-        ];
+                'label' => $i18n->__('Organization name'),
+                "default" => $i18n->__("Organization"),
+                "widget" => "sfWidgetFormInput",
+                "help" => $i18n->__("This is an organization field"),
+                "i18n" => true
+            ]
+        ]);
     }
 
     /**
@@ -203,10 +210,13 @@ class SettingsNextGenTheme
      */
     private function _createSettings(): SettingsNextGenTheme
     {
-        foreach ($this->getSettingsConfig() as $settingName => $settingConfig) {
+        $this->_settings = [];
+        foreach ($this->getSettingsConfig() as $settingConfig) {
+            $settingName = $settingConfig['id'];
             // Escape queries, add setting if it's not already created (to avoid adding it in a migration)
             if (null === $setting = QubitSetting::getByNameAndScope($settingName, $this->getSettingScope())) {
                 $setting = QubitSetting::createNewSetting($settingName, $settingConfig['default'] ?? null, ['scope' => $this->getSettingScope()]);
+                $setting->save();
             }
             $this->_settings[$settingName] = $setting;
         }
@@ -235,13 +245,23 @@ class SettingsNextGenTheme
     {
         $form = new sfForm();
 
-        foreach ($this->getSettingsConfig() as $settingName => $settingConfig){
+        foreach ($this->getSettingsConfig() as $settingConfig) {
+            $settingName = $settingConfig['id'];
+            $form->setWidget($settingName, $this->getWidgetInstance($settingConfig));
+        }
+        return $form;
+    }
+    public function updateForm(sfForm $form): sfForm
+    {
+        foreach ($this->getSettingsConfig() as $settingConfig) {
+            $settingName = $settingConfig['id'];
             $form->setWidget($settingName, $this->getWidgetInstance($settingConfig));
         }
         return $form;
     }
 
-    public function getWidgetClass($settingConfig): string {
+    public function getWidgetClass($settingConfig): string
+    {
         return $settingConfig['widget'] ?? $this->_defaultWidgetClass();
     }
 
@@ -252,13 +272,30 @@ class SettingsNextGenTheme
 
     public function getWidgetInstance($settingConfig): sfWidgetForm
     {
-        $widget = $this->getWidgetClass($settingConfig)($this->getWidgetConfig($settingConfig));
+        $className = $this->getWidgetClass($settingConfig);
+        $widget = new $className($this->getWidgetOptions($settingConfig), $this->getWidgetAttributes($settingConfig));
         return $widget;
     }
 
-    public function getWidgetConfig($settingConfig): array
+    /**
+     * Get attributes for a widget
+     *
+     * @param $settingConfig
+     * @return array
+     */
+    public function getWidgetAttributes($settingConfig): array
     {
-        return $settingConfig;
+        return array_intersect_key($settingConfig, array_flip(['id']));
+    }
+
+    /**
+     * Get options for a widget
+     * @param $settingConfig
+     * @return array
+     */
+    public function getWidgetOptions($settingConfig): array
+    {
+        return array_intersect_key($settingConfig, array_flip(['label', 'default']));
     }
 
     /**

@@ -17,7 +17,7 @@
  * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class SettingsNextGenAction extends SettingsEditAction
+class ahNextGenThemeAdminThemeAdminAction extends SettingsEditAction
 {
     // Arrays not allowed in class constants
     public static $FIELDS = [];
@@ -34,12 +34,12 @@ class SettingsNextGenAction extends SettingsEditAction
 
     public function __construct($context, $moduleName, $actionName)
     {
-        parent::__construct($context, $moduleName, $actionName);
         // TODO: Use dependency injection to inject SettingsNextGenTheme
         $this->settingsNextGenTheme = new SettingsNextGenTheme();
+        parent::__construct($context, $moduleName, $actionName);
     }
 
-    public function setI18N(): SettingsNextGenAction
+    public function setI18N(): ahNextGenThemeAdminThemeAdminAction
     {
         self::$I18N= [];
         foreach($this->settingsNextGenTheme->getSettingsConfig() as $settingName => $settingConfig){
@@ -50,7 +50,7 @@ class SettingsNextGenAction extends SettingsEditAction
         return $this;
     }
 
-    public function setNames(): SettingsNextGenAction
+    public function setNames(): ahNextGenThemeAdminThemeAdminAction
     {
         self::$NAMES= [];
         foreach($this->settingsNextGenTheme->getSettingsConfig() as $settingName => $settingConfig){
@@ -71,19 +71,29 @@ class SettingsNextGenAction extends SettingsEditAction
     public function loadSettings()
     {
         // Load setting for each field name
-        $this->settings = $this->settingsNextGenThemeNextGenTheme->getSettings();
+        $this->settings = $this->settingsNextGenTheme->getSettings();
     }
 
     public function earlyExecute()
     {
         $this->_earlyExecute();
 
-        $this->_formInit();
+        parent::earlyExecute();
+        $this->form = $this->_formInit($this->form);
         $this->updateMessage = $this->i18n->__('Next Generation theme settings saved.');
     }
 
-    private function _formInit($fieldConfigs)
+    private function _formInit($form)
     {
-        return $this->settingsNextGenTheme->createForm();
+        return $this->settingsNextGenTheme->updateForm($form);
+    }
+
+    protected function addField($name)
+    {
+        // Emtpy: Use the SettingsNextGenTheme class to get the form.
+    }
+
+    protected function setFormFieldDefault($name){
+        
     }
 }
