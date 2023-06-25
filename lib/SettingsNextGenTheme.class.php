@@ -17,10 +17,6 @@
  * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
  */
 
-use QubitSetting;
-use sfForm;
-use sfWidgetForm;
-
 /**
  * Global form definition for settings module - with validation.
  *
@@ -28,109 +24,6 @@ use sfWidgetForm;
  */
 class SettingsNextGenTheme
 {
-    /*
-     *
-    'archival_holding_text_1' => [
-    'label' => __('Archival holding text 1'), 'i18n' => true
-    ],
-    'archival_holding_image_url_1' => [
-    'label' => __('Archival holding image url 1'), 'i18n' => true
-    ],
-    'archival_holding_url_1' => [
-    'label' => __('Archival holding url 1'), 'i18n' => true
-    ],
-    'archival_holding_text_2' => [
-    'label' => __('Archival holding text 2'), 'i18n' => true
-    ],
-    'archival_holding_image_url_2' => [
-    'label' => __('Archival holding image url 2'), 'i18n' => true
-    ],
-    'archival_holding_url_2' => [
-    'label' => __('Archival holding url 2'), 'i18n' => true
-    ],
-    'archival_holding_text_3' => [
-    'label' => __('Archival holding text 3'), 'i18n' => true
-    ],
-    'archival_holding_image_url_3' => [
-    'label' => __('Archival holding image url 3'), 'i18n' => true
-    ],
-    'archival_holding_url_3' => [
-    'label' => __('Archival holding url 3'), 'i18n' => true
-    ],
-    'archival_holding_text_4' => [
-    'label' => __('Archival holding text 4'), 'i18n' => true
-    ],
-    'archival_holding_url_4' => [
-    'label' => __('Archival holding url 4'), 'i18n' => true
-    ],
-
-    'carousel_text_1' => [
-    'label' => __('Carousel text 1'), 'i18n' => true
-    ],
-    'carousel_image_url_1' => [
-    'label' => __('Carousel image url 1'), 'i18n' => true
-    ],
-    'carousel_url_1' => [
-    'label' => __('Carousel url 1'), 'i18n' => true
-    ],
-    'carousel_text_2' => [
-    'label' => __('Carousel text 2'), 'i18n' => true
-    ],
-    'carousel_image_url_2' => [
-    'label' => __('Carousel image url 2'), 'i18n' => true
-    ],
-    'carousel_url_2' => [
-    'label' => __('Carousel url 2'), 'i18n' => true
-    ],
-    'carousel_text_3' => [
-    'label' => __('Carousel text 3'), 'i18n' => true
-    ],
-    'carousel_image_url_3' => [
-    'label' => __('Carousel image url 3'), 'i18n' => true
-    ],
-    'carousel_url_3' => [
-    'label' => __('Carousel url 3'), 'i18n' => true
-    ],
-
-    'social_icon_1' => [
-    'label' => __('Social icon 1'),
-    'default' => 'facebook'
-    ],
-    'social_url_1' => [
-    'label' => __('Social URL 1'),
-    ],
-    'social_icon_2' => [
-    'label' => __('Social icon 2'),
-    'default' => 'instagram'
-    ],
-    'social_url_2' => ['label' => __('Social URL 2'),],
-    'social_icon_3' => [
-    'label' => __('Social icon 3'),
-    'default' => 'youtube'
-    ],
-    'social_url_3' => ['label' => __('Social URL 3'),],
-    'social_icon_4' => [
-    'label' => __('Social icon 4'),
-    'default' => 'telegram'
-    ],
-    'social_url_4' => ['label' => __('Social URL 4'),],
-
-    'contact_text' => [
-    'label' => __('Contact data'), 'i18n' => true
-    ],
-
-    'map_url' => ['label' => __('Map URL')],
-
-    'term_and_conditions_url' => [
-    'label' => __('Terms and conditions URL'), 'i18n' => true
-    ],
-    'privacy_policy_url' => [
-    'label' => __('Privacy policy URL'), 'i18n' => true
-    ],
-    'multilingual_disclaimer_url' => [
-    'label' => __('Multilingual disclaimer URL'), 'i18n' => true
-    ],
-     */
     /**
      * @var array
      * Store all the settings for this object
