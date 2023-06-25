@@ -1,6 +1,6 @@
 <?php echo get_partial('layout_start'); ?>
 
-<div id="wrapper" class="container pt-3 flex-grow-1">
+<div id="wrapper" class="container-xxl pt-3 flex-grow-1">
   <?php echo get_partial('alerts'); ?>
   <div id="main-column" role="main">
     <?php include_slot('title'); ?>
@@ -12,7 +12,6 @@
     <?php } ?>
     <?php include_slot('after-content'); ?>
   </div>
-    <?php echo get_partial('footer'); ?>
 </div>
 
 <?php echo get_partial('layout_end'); ?>
