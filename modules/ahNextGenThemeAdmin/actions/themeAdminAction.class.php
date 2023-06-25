@@ -41,10 +41,10 @@ class ahNextGenThemeAdminThemeAdminAction extends SettingsEditAction
 
     public function setI18N(): ahNextGenThemeAdminThemeAdminAction
     {
-        self::$I18N= [];
-        foreach($this->settingsNextGenTheme->getSettingsConfig() as $settingName => $settingConfig){
+        self::$I18N = [];
+        foreach($this->settingsNextGenTheme->getSettingsConfig() as $settingConfig){
             if (array_key_exists('i18n', $settingConfig)){
-                array_push(self::$I18N, $settingName);
+                self::$I18N = $settingConfig['id'];
             }
         }
         return $this;
@@ -52,9 +52,9 @@ class ahNextGenThemeAdminThemeAdminAction extends SettingsEditAction
 
     public function setNames(): ahNextGenThemeAdminThemeAdminAction
     {
-        self::$NAMES= [];
-        foreach($this->settingsNextGenTheme->getSettingsConfig() as $settingName => $settingConfig){
-            array_push(self::$NAMES, $settingName);
+        self::$NAMES = [];
+        foreach($this->settingsNextGenTheme->getSettingsConfig() as $settingConfig){
+            self::$NAMES[] = $settingConfig['id'];
         }
         return $this;
     }
