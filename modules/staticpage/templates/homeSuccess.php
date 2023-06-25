@@ -112,7 +112,7 @@
                    target='_blank'
                    title='04803 La Vanguardia [1960]'>
                     <img class="d-block h-100 mx-auto"
-                         src=https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6610",
+                         src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6610"
                          alt="04803 La Vanguardia [1960]"/>
                     <div class="text-shadow carousel-caption d-none d-md-block">
                         <h5>04803 La Vanguardia [1960]</h5>
