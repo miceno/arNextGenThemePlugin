@@ -65,6 +65,14 @@ class SettingsNextGenTheme
     public function _initSettings()
     {
         $i18n = sfContext::getInstance()->getI18N();
+
+//        // TODO: Read settings field description from a file.
+//        if (null === $this->getSettingsConfig()) {
+//            // TODO: get prefix
+//            $prefix = '';
+//            $this->setSettingsConfig( sfYaml::load($prefix . 'settings_config.yml'));
+//        }
+
         $this->setSettingsConfig( [
             /* Organization name */
             [
