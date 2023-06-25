@@ -17,30 +17,32 @@
  * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class arNextGenThemePluginConfiguration extends sfPluginConfiguration
+require_once sfConfig::get('sf_plugins_dir')
+    .'/arDominionB5Plugin/config/arDominionB5PluginConfiguration.class.php';
+
+class arNextGenThemePluginConfiguration extends arDominionB5PluginConfiguration
 {
     public static $summary = 'Next Geneneration Theme plugin made with Bootstrap 5.x';
     public static $version = '0.1.0';
 
     public function initialize()
     {
-        // Avoid $this->name and $this->rootDir to use this class
-        // values when this method is called from child classes.
-        $decoratorDirs = sfConfig::get('sf_decorator_dirs');
-        $decoratorDirs[] = sfConfig::get('sf_plugins_dir')
-            .'/arNextGenThemePlugin/templates';
-        $decoratorDirs[] = sfConfig::get('sf_plugins_dir')
-            .'/arDominionB5Plugin/templates';
-        sfConfig::set('sf_decorator_dirs', $decoratorDirs);
+        parent::initialize();
+
+        // Add this plugin templates before arDominionB5Plugin
+        sfConfig::set('sf_decorator_dirs', array_merge(
+            [$this->rootDir.'/templates'],
+            sfConfig::get('sf_decorator_dirs')
+        ));
 
         // Move this plugin to the top to allow overwriting
         // controllers and views from other plugin modules.
         $plugins = $this->configuration->getPlugins();
-        if (false !== $key = array_search('arNextGenThemePlugin', $plugins)) {
+        if (false !== $key = array_search($this->name, $plugins)) {
             unset($plugins[$key]);
         }
         $this->configuration->setPlugins(
-            array_merge(['arNextGenThemePlugin'], $plugins)
+            array_merge([$this->name], $plugins)
         );
 
         // Indicate this is a Bootstrap 5 theme in sfConfig,
