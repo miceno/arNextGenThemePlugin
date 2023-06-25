@@ -16,6 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
  */
+require_once('plugins/arNextGenThemePlugin/lib/form/ahNextGenWidgetFormSchemaFormatter.class.php');
 
 /**
  * Global form definition for settings module - with validation.
@@ -55,6 +56,7 @@ class SettingsNextGenTheme
         $this->setSettingScope('ahNextGenTheme');
         $this->_initSettings();
         $this->_createSettings();
+        $this->setFormatterClass('ahNextGenWidgetFormSchemaFormatter');
     }
 
     /**
@@ -230,12 +232,12 @@ class SettingsNextGenTheme
     private function decorateForm(sfForm $form): sfForm
     {
         $formatterClass = $this->getFormatterClass();
-        $formatter = new $formatterClass($form->widgetSchema);
+        $formatter = new $formatterClass($form->getWidgetSchema());
 
         $formatter->form = $form;
 
-        $form->widgetSchema->addFormFormatter($form->getName(), $formatter);
-        $form->widgetSchema->setFormFormatterName($form->getName());
+        $form->getWidgetSchema()->addFormFormatter($form->getName(), $formatter);
+        $form->getWidgetSchema()->setFormFormatterName($form->getName());
 
         return $form;
     }
