@@ -83,7 +83,7 @@ class ahNextGenThemeAdminThemeAdminAction extends SettingsEditAction
         $this->updateMessage = $this->i18n->__('Next Generation theme settings saved.');
     }
 
-    private function _formInit($form)
+    private function _formInit($form): sfForm
     {
         return $this->settingsNextGenTheme->updateForm($form);
     }
