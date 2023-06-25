@@ -21,20 +21,12 @@
     <?php echo $form->renderHiddenFields(); ?>
 
     <div id="content">
-
-      <fieldset class="collapsible">
-
-        <legend>Empty: to be done</legend>
-
-      </fieldset>
+        <?php echo $form->render(); ?>
     </div>
 
-    <section class="actions">
-      <ul>
-        <li><input class="c-btn c-btn-submit" type="submit" value="<?php echo __('Save'); ?>"/></li>
-      </ul>
+    <section class="actions mb-3">
+        <input class="btn atom-btn-outline-success" type="submit" value="<?php echo __('Save'); ?>"/>
     </section>
-
   </form>
 
 <?php end_slot(); ?>
