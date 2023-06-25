@@ -53,10 +53,11 @@ class SettingsNextGenTheme
 
     public function __construct()
     {
+        $this->setSettingsConfig([]);
         $this->setSettingScope('ahNextGenTheme');
+        $this->setFormatterClass('ahNextGenWidgetFormSchemaFormatter');
         $this->_initSettings();
         $this->_createSettings();
-        $this->setFormatterClass('ahNextGenWidgetFormSchemaFormatter');
     }
 
     /**
@@ -68,24 +69,12 @@ class SettingsNextGenTheme
     {
         $i18n = sfContext::getInstance()->getI18N();
 
-//        // TODO: Read settings field description from a file.
-//        if (null === $this->getSettingsConfig()) {
-//            // TODO: get prefix
-//            $prefix = '';
-//            $this->setSettingsConfig( sfYaml::load($prefix . 'settings_config.yml'));
-//        }
-
-        $this->setSettingsConfig( [
-            /* Organization name */
-            [
-                'id' => 'organization_name',
-                'label' => $i18n->__('Organization name'),
-                "default" => $i18n->__("Organization"),
-                "widget" => "sfWidgetFormInput",
-                "help" => $i18n->__("This is an organization field"),
-                "i18n" => true
-            ]
-        ]);
+        // Read settings field description from a file.
+        if ( empty($this->getSettingsConfig())) {
+            // TODO: get prefix
+            $prefix = 'plugins/arNextGenThemePlugin/lib/';
+            $this->setSettingsConfig( sfYaml::load($prefix . 'settings_config.yml')[$this->getSettingScope()]);
+        }
     }
 
     /**

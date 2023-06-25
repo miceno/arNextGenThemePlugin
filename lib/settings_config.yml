@@ -1,0 +1,133 @@
+ahNextGenTheme:
+  organization_name:
+    id: organization_name
+    label: Organization name
+    default: Organization
+    widget: sfWidgetFormInput
+    help: This is an organization field
+    i18n: true
+
+  archival_holding_text_1:
+    id: archival_holding_text_1
+    label: Archival holding text 1
+    help: Archival holding text 1
+    i18n: true
+  archival_holding_image_url_1:
+    id: archival_holding_image_url_1
+    label: Archival holding image url 1
+    help: Archival holding image url 1
+    i18n: true
+  archival_holding_url_1:
+    id: archival_holding_url_1
+    label: Archival holding url 1
+    help: Archival holding url 1
+    i18n: true
+  archival_holding_text_2:
+    id: archival_holding_text_2
+    label: Archival holding text 2
+    help: Archival holding text 2
+    i18n: true
+  archival_holding_image_url_2:
+    id: archival_holding_image_url_2
+    label: Archival holding image url 2
+    help: Archival holding image url 2
+    i18n: true
+  archival_holding_url_2:
+    id: archival_holding_url_2
+    label: Archival holding url 2
+    help: Archival holding url 2
+    i18n: true
+  archival_holding_text_3:
+    id: archival_holding_text_3
+    label: Archival holding text 3
+    help: Archival holding text 3
+    i18n: true
+  archival_holding_image_url_3:
+    id: archival_holding_image_url_3
+    label: Archival holding image url 3
+    help: Archival holding image url 3
+    i18n: true
+  archival_holding_url_3:
+    id: archival_holding_url_3
+    label: Archival holding url 3
+    help: Archival holding url 3
+    i18n: true
+  archival_holding_text_4:
+    id: archival_holding_text_4
+    label: Archival holding text 4
+    help: Archival holding text 4
+    i18n: true
+  archival_holding_image_url_4:
+    id: archival_holding_image_url_4
+    label: Archival holding image url 4
+    help: Archival holding image url 4
+    i18n: true
+  archival_holding_url_4:
+    id: archival_holding_url_4
+    label: Archival holding url 4
+    help: Archival holding url 4
+    i18n: true
+
+  social_icon_1:
+    id: social_icon_1
+    label: Social icon 1
+    help: Social icon 1
+    default: facebook
+  social_url_1:
+    id: social_url_1
+    label: Social URL 1
+    help: Social URL 1
+  social_icon_2:
+    id: social_icon_2
+    label: Social icon 2
+    help: Social icon 2
+    default: instagram
+  social_url_2:
+    id: social_url_2
+    label: Social URL 2
+    help: Social URL 2
+  social_icon_3:
+    id: social_icon_3
+    label: Social icon 3
+    help: Social icon 3
+    default: youtube
+  social_url_3:
+    id: social_url_3
+    label: Social URL 3
+    help: Social URL 3
+  social_icon_4:
+    id: social_icon_4
+    label: Social icon 4
+    help: Social icon 4
+    default: telegram
+  social_url_4:
+    id: social_url_4
+    label: Social URL 4
+    help: Social URL 4
+
+  contact_text:
+    id: contact_text
+    label: Contact data
+    help: Contact data
+    i18n: true
+
+  map_url:
+    id: map_url
+    label: Map URL
+    help: Map URL
+
+  term_and_conditions_url:
+    id: term_and_conditions_url
+    label: Terms and conditions URL
+    help: Terms and conditions URL
+    i18n: true
+  privacy_policy_url:
+    id: privacy_policy_url
+    label: Privacy policy URL
+    help: Privacy policy URL
+    i18n: true
+  multilingual_disclaimer_url:
+    id: multilingual_disclaimer_url
+    label: Multilingual disclaimer URL
+    help: Multilingual disclaimer URL
+    i18n: true
