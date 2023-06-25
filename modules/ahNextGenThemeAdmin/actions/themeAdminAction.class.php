@@ -78,6 +78,7 @@ class ahNextGenThemeAdminThemeAdminAction extends SettingsEditAction
     {
         $this->_earlyExecute();
 
+        $this->settingsDefaults = [];
         parent::earlyExecute();
         $this->form = $this->_formInit($this->form);
         $this->updateMessage = $this->i18n->__('Next Generation theme settings saved.');
@@ -93,7 +94,4 @@ class ahNextGenThemeAdminThemeAdminAction extends SettingsEditAction
         // Emtpy: Use the SettingsNextGenTheme class to get the form.
     }
 
-    protected function setFormFieldDefault($name){
-
-    }
 }
