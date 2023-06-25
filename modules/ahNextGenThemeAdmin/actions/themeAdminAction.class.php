@@ -94,6 +94,6 @@ class ahNextGenThemeAdminThemeAdminAction extends SettingsEditAction
     }
 
     protected function setFormFieldDefault($name){
-        
+
     }
 }
