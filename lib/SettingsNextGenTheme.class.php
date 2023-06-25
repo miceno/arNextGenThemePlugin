@@ -42,6 +42,8 @@ class SettingsNextGenTheme
 
     protected string $_formatterClass;
 
+    public array $defaultInputAttributes = ['class' => 'form-control'];
+
     /**
      * Stores the QubitSetting data for this configuration.
      *
@@ -142,11 +144,27 @@ class SettingsNextGenTheme
         $this->updateForm($form);
         return $form;
     }
+
+    /** Return default classes for a set of attributes
+     * @param $attributes
+     * @return void
+     */
+    public function getDefaultAttributes($attributes) {
+        $attributes['class'] ??= $this->defaultInputAttributes['class'];
+
+        if(!str_contains($attributes['class'], $this->defaultInputAttributes['class'])){
+            $attributes['class'] .= " " . $this->defaultInputAttributes['class'];
+        }
+        return $attributes;
+    }
+
     public function updateForm(sfForm $form): sfForm
     {
         foreach ($this->getSettingsConfig() as $settingConfig) {
             $settingName = $settingConfig['id'];
-            $form->setWidget($settingName, $this->getWidgetInstance($settingConfig));
+
+            $widget = $this->getWidgetInstance($settingConfig);
+            $form->setWidget($settingName, $widget);
             $form->setValidator($settingName, $this->getValidator($settingConfig));
         }
         $this->decorateForm($form);
@@ -166,7 +184,9 @@ class SettingsNextGenTheme
     public function getWidgetInstance($settingConfig): sfWidgetForm
     {
         $className = $this->getWidgetClass($settingConfig);
-        $widget = new $className($this->getWidgetOptions($settingConfig), $this->getWidgetAttributes($settingConfig));
+
+        $attributes = $this->getWidgetAttributes($this->getDefaultAttributes($settingConfig));
+        $widget = new $className($this->getWidgetOptions($settingConfig), $attributes);
         return $widget;
     }
 
@@ -178,7 +198,7 @@ class SettingsNextGenTheme
      */
     public function getWidgetAttributes($settingConfig): array
     {
-        return array_intersect_key($settingConfig, array_flip(['id']));
+        return array_intersect_key($settingConfig, array_flip(['id', 'class']));
     }
 
     /**
@@ -188,7 +208,7 @@ class SettingsNextGenTheme
      */
     public function getWidgetOptions($settingConfig): array
     {
-        return array_intersect_key($settingConfig, array_flip(['label', 'default']));
+        return array_intersect_key($settingConfig, array_flip(['label', 'default', 'help']));
     }
 
     /**
