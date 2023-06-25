@@ -78,48 +78,22 @@
             <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner w-100">
-            <div class="carousel-item h-100 active ">
-                <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html"
+            <?php foreach ($carouselItemsCulture as $i => $item) { ?>
+              <div class="carousel-item h-100 <?php if ($i == 0) { echo "active";} ?>">
+                <a href="<?php echo $item['url'] ?? '#'; ?>"
                    target="_blank"
-                   title="10836 Protecció de menors 1954">
-                    <img class="d-block h-100 mx-auto"
-                         src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=100048"
-                         alt="10836 Protecció de menors 1954"/>
-                    <div class="text-shadow carousel-caption d-none d-md-block">
-                        <h5>10836 Protecció de menors 1954</h5>
-                        <p>Protecció de menors (La Prote). Nens amb les bótes de
-                            llet de l'ajuda USA.
-                        </p>
-                    </div>
+                   class="<?php echo $item['class'] ?? 'text-white text-decoration-none'; ?>"
+                   title="<?php echo $item['title'] ?? ''; ?>">
+                      <?php echo image_tag($item['image'] ?? '',
+                          ['class' => 'd-block h-100 mx-auto',
+                           'alt' => strip_markdown($item['title'] ?? '')]); ?>
+                  <div class="text-shadow carousel-caption d-none d-md-block">
+                    <h5><?php echo $item['title']?></h5>
+                    <p><?php echo $item['description']?></p>
+                  </div>
                 </a>
-            </div>
-            <div class="carousel-item h-100">
-                <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/20689-Centenari-del-ferrocarril-1948.html"
-                   target="_blank"
-                   title="20689 Centenari del ferrocarril 1948">
-                    <img class="d-block h-100 mx-auto"
-                         src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=163252"
-                         alt="20689 Centenari del ferrocarril 1948"/>
-                    <div class="text-shadow carousel-caption d-none d-md-block">
-                        <h5>20689 Centenari del ferrocarril 1948</h5>
-                        <p>Centenari del ferrocarril. La locomotora "cocodril" 7510 sortint
-                            de l'Estació de França.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="carousel-item h-100">
-                <a href="https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html"
-                   target='_blank'
-                   title='04803 La Vanguardia [1960]'>
-                    <img class="d-block h-100 mx-auto"
-                         src="https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6610"
-                         alt="04803 La Vanguardia [1960]"/>
-                    <div class="text-shadow carousel-caption d-none d-md-block">
-                        <h5>04803 La Vanguardia [1960]</h5>
-                        <p>Repartidor de diaris de La Vanguardia, amb carro i cavall.</p>
-                    </div>
-                </a>
-            </div>
+              </div>
+            <?php } /* foreach $carouselItems */ ?>
         </div>
         <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselHomePage" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

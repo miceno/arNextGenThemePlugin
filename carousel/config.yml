@@ -1,0 +1,58 @@
+# Carousel description
+#
+# carouselXX:
+#   image:
+#   url:
+#   class:
+#   title:
+#   en:
+#     description:
+#   es:
+#     description:
+#   ca:
+#     description:
+
+carousel01:
+    image: 'https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=100048'
+    url: 'https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/10836-Proteccio__-de-menors-1954.html'
+    title: 10836 Protecció de menors 1954
+    en:
+      description: Children Care (La Prote). Children with the milk barrels of the US help.
+    es:
+      description: >-
+        Protección de menores (La Prote). Niños con los toneles de la leche de
+        la ayuda de EE.UU.
+    ca:
+      description: >-
+        Protecció de menors (La Prote). Nens amb les bótes de llet de l'ajuda
+        USA.
+carousel02:
+    image: >-
+      https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=163252
+    url: >-
+      https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/20689-Centenari-del-ferrocarril-1948.html
+    title: 20689 Centenari del ferrocarril 1948
+    en:
+      description: >-
+        Railway Centenary. The "crocodile" locomotive 7510 exits the French
+        Station.
+    es:
+      description: >-
+        Centenario del ferrocarril. La locomotora "cocodrilo" 7510 saliendo de
+        la Estación de Francia.
+    ca:
+      description: >-
+        Centenari del ferrocarril. La locomotora "cocodril" 7510 sortint de
+        l'Estació de França.
+carousel03:
+    image: >-
+      https://fotos.arxiuhistoricpoblenou.cat/main.php?g2_view=core.DownloadItem&g2_itemId=6610
+    url: >-
+      https://fotos.arxiuhistoricpoblenou.cat/fotografia/arxiufotografic/4803+La+Vanguardia+_1960_.html
+    title: '04803 La Vanguardia [1960]'
+    en:
+      description: 'Newscaster of La Vanguardia, with carriage and horse.'
+    es:
+      description: 'Repartidor de periódicos de La Vanguardia, con carrro y caballo.'
+    ca:
+      description: 'Repartidor de diaris de La Vanguardia, amb carro i cavall.'
