@@ -146,6 +146,8 @@ class SettingsNextGenTheme
 
     protected string $_settingScope;
 
+    protected string $_formatterClass;
+
     /**
      * Stores the QubitSetting data for this configuration.
      *
@@ -245,10 +247,7 @@ class SettingsNextGenTheme
     {
         $form = new sfForm();
 
-        foreach ($this->getSettingsConfig() as $settingConfig) {
-            $settingName = $settingConfig['id'];
-            $form->setWidget($settingName, $this->getWidgetInstance($settingConfig));
-        }
+        $this->updateForm($form);
         return $form;
     }
     public function updateForm(sfForm $form): sfForm
@@ -258,6 +257,7 @@ class SettingsNextGenTheme
             $form->setWidget($settingName, $this->getWidgetInstance($settingConfig));
             $form->setValidator($settingName, $this->getValidator($settingConfig));
         }
+        $this->decorateForm($form);
         return $form;
     }
 
@@ -325,6 +325,36 @@ class SettingsNextGenTheme
         $validator = new $validatorClass ($options);
 
         return $validator;
+    }
+    private function decorateForm(sfForm $form): sfForm
+    {
+        $formatterClass = $this->getFormatterClass();
+        $formatter = new $formatterClass($form->widgetSchema);
+
+        $formatter->form = $form;
+
+        $form->widgetSchema->addFormFormatter($form->getName(), $formatter);
+        $form->widgetSchema->setFormFormatterName($form->getName());
+
+        return $form;
+    }
+
+    /**
+     * @param string $formatterClass
+     * @return SettingsNextGenTheme
+     */
+    public function setFormatterClass(string $formatterClass): SettingsNextGenTheme
+    {
+        $this->_formatterClass = $formatterClass;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFormatterClass(): string
+    {
+        return $this->_formatterClass;
     }
 
 
