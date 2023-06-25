@@ -256,6 +256,7 @@ class SettingsNextGenTheme
         foreach ($this->getSettingsConfig() as $settingConfig) {
             $settingName = $settingConfig['id'];
             $form->setWidget($settingName, $this->getWidgetInstance($settingConfig));
+            $form->setValidator($settingName, $this->getValidator($settingConfig));
         }
         return $form;
     }
@@ -314,6 +315,16 @@ class SettingsNextGenTheme
     public function getSettings(): array
     {
         return $this->_settings;
+    }
+
+    protected function getValidator($settingConfig)
+    {
+        $options['required'] = $settingConfig['required'] ?? false;
+        $validatorClass = "sfValidatorString";
+
+        $validator = new $validatorClass ($options);
+
+        return $validator;
     }
 
 
